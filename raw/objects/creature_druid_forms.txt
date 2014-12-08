@@ -3,20 +3,15 @@ creature_druid_forms
 [OBJECT:CREATURE]
 
 ===========================================================================================================
-Dark Ages 0.40.11 | r1 | Druid Animals, powerful versions of vanilla creatures. GM-X | dfdarkage.com
+Dark Ages 0.40.19 | r2 | Druidic Dwarf shapeshifting animals, no longer appear in nature. GM-X | dfdarkage.com
 ===========================================================================================================
 
 [CREATURE:DRUIDIC_GIANT_SNAPPING_TURTLE]
 	[DESCRIPTION:A giant reptile with a thick ridged shell. It has been known to consume snakes and smaller turtles, and its bite can amputate fingers.]
 	[NAME:giant snapping turtle:giant snapping turtles:giant snapping turtle]
-	[CASTE_NAME:giant snapping turtle:giant snapping turtles:giant snapping turtle]
 	[CREATURE_TILE:'T'][COLOR:2:0:0]
 	[AMPHIBIOUS]
 	[NATURAL]
-	[LARGE_ROAMING]
-	[PET_EXOTIC][TRAINABLE][PETVALUE:775]
-    [POPULATION_NUMBER:25:50][LOOSE_CLUSTERS]
-	[CLUSTER_NUMBER:1:1][FREQUENCY:35]
 	[DIFFICULTY:3]
 	[PREFSTRING:vicious bites]
 	[PREFSTRING:strong shells]
@@ -29,13 +24,6 @@ Dark Ages 0.40.11 | r1 | Druid Animals, powerful versions of vanilla creatures. 
 	[USE_MATERIAL_TEMPLATE:MUSCLE:TOUGHMUSCLE_TEMPLATE]	
 	[SELECT_TISSUE_LAYER:ALL]
 		[TL_HEALING_RATE:50]
-============================================================================================================
-	[BIOME:RIVER_TEMPERATE_FRESHWATER]
-	[BIOME:RIVER_TEMPERATE_BRACKISHWATER]
-	[BIOME:LAKE_TEMPERATE_FRESHWATER]
-	[BIOME:LAKE_TEMPERATE_BRACKISHWATER]
-	[BIOME:POOL_TEMPERATE_FRESHWATER]
-	[BIOME:POOL_TEMPERATE_BRACKISHWATER]
 ### Combat Skills==========================================================================================
 	[NATURAL_SKILL:SNEAK:3]
 	[NATURAL_SKILL:DODGING:4]
@@ -113,14 +101,9 @@ Dark Ages 0.40.11 | r1 | Druid Animals, powerful versions of vanilla creatures. 
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-		[LAYS_EGGS]
-			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
-			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
-			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
-			[EGG_SIZE:70]
-			[CLUTCH_SIZE:5:10] actually much higher
 	[CASTE:DRUIDIC]
 	    [EQUIPS]
+	[CASTE_NAME:druidic giant snapping turtle:druidic giant snapping turtles:druidic giant snapping turtle]		
 	[CASTE:MALE]
 		[MALE]
 	[SELECT_CASTE:ALL]
@@ -157,22 +140,9 @@ Dark Ages 0.40.11 | r1 | Druid Animals, powerful versions of vanilla creatures. 
 	[NATURAL_SKILL:SITUATIONAL_AWARENESS:9]
 	[NATURAL_SKILL:BITE:3]
 	[NATURAL_SKILL:STANCE_STRIKE:4]
-============================================================================================================
-	[BIOME:ANY_WETLAND]
-	[BIOME:ANY_TEMPERATE_FOREST]
-	[BIOME:FOREST_TROPICAL_CONIFER]
-	[BIOME:FOREST_TROPICAL_DRY_BROADLEAF]
-	[BIOME:FOREST_TAIGA]
-	[BIOME:ANY_SHRUBLAND]
-	[BIOME:ANY_SAVANNA]
-	[BIOME:ANY_GRASSLAND]
-	[BIOME:ANY_DESERT]
-	[BIOME:MOUNTAIN]
-	[BIOME:TUNDRA]
-============================================================================================================
+===========================================================================================================	
 	[HOMEOTHERM:10067]
-	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:300:200:100:1900:2900] 87+ kph (110), need to work on base speed for fliers
-											dive ~320
+	[APPLY_CREATURE_VARIATION:STANDARD_FLYING_GAITS:900:300:200:100:1900:2900] 87+ kph (110), need to work on base speed for fliers										dive ~320
 	[APPLY_CREATURE_VARIATION:STANDARD_WALKING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:9000:8900:8825:8775:9500:9900] 1 kph
@@ -239,12 +209,6 @@ Dark Ages 0.40.11 | r1 | Druid Animals, powerful versions of vanilla creatures. 
 	[CASTE:FEMALE]
 		[CASTE_NAME:peregrine falcon:peregrine falcons:peregrine falcon]
 		[FEMALE]
-		[LAYS_EGGS]
-			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGGSHELL:SOLID]
-			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_WHITE:LIQUID]
-			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
-			[EGG_SIZE:46]
-			[CLUTCH_SIZE:3:4]
 		[BODY_SIZE:0:0:244]
 		[BODY_SIZE:1:0:600]
 		[BODY_SIZE:2:0:1200]
@@ -256,6 +220,7 @@ Dark Ages 0.40.11 | r1 | Druid Animals, powerful versions of vanilla creatures. 
 		[BODY_SIZE:2:0:1200]
 	[CASTE:DRUIDIC]
 	    [EQUIPS]
+		[CASTE_NAME:druidic peregrine falcon:druidic peregrine falcons:druidic peregrine falcon]		
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:FEATHER]
 			[TL_COLOR_MODIFIER:BROWN:1]
@@ -276,13 +241,6 @@ Dark Ages 0.40.11 | r1 | Druid Animals, powerful versions of vanilla creatures. 
 	[CHILD:1][GENERAL_CHILD_NAME:grizzly bear cub:grizzly bear cubs]
 	[CREATURE_TILE:'D'][COLOR:6:0:0]
 	[NATURAL]
-	[PETVALUE:950][PET][TRAINABLE][MOUNT_EXOTIC]
-===========================================================================================================
-	[LARGE_ROAMING][FREQUENCY:8]
-	[POPULATION_NUMBER:8:15]
-	[CLUSTER_NUMBER:1:3][LOOSE_CLUSTERS]
-	[BIOME:FOREST_TAIGA]
-	[BIOME:ANY_TEMPERATE_FOREST]
 ===========================================================================================================
 	[CURIOUSBEAST_EATER]
 	[CURIOUSBEAST_GUZZLER]
@@ -375,6 +333,7 @@ Dark Ages 0.40.11 | r1 | Druid Animals, powerful versions of vanilla creatures. 
 		[MALE]
 	[CASTE:DRUIDIC]
 	    [EQUIPS]
+	    [CASTE_NAME:druidic grizzly bear:druidic grizzly bears:druidic grizzly bear]		
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
 			[TL_COLOR_MODIFIER:BROWN:1]

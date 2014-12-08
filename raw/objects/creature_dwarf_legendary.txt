@@ -3,7 +3,7 @@ creature_dwarf_legendary
 [OBJECT:CREATURE]
 
 ===========================================================================================================
-Dark Ages 0.40.19 | r1 | Legendary Dwarfs. Powerful, epic, vanilla Dwarves. GM-X | dfdarkage.com
+Dark Ages 0.40.19 | r2 | Legendary Dwarfs. Powerful, epic vanilla Dwarves. GM-X | dfdarkage.com
 ===========================================================================================================
 
 [CREATURE:LEGENDARY_DWARF]
@@ -22,7 +22,7 @@ Dark Ages 0.40.19 | r1 | Legendary Dwarfs. Powerful, epic, vanilla Dwarves. GM-X
 ### Legendary Package GM-X
 ============================================================================================================
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:4]
-	[NOFEAR]
+	[LIKES_FIGHTING]
     [SUPERNATURAL][FANCIFUL]
 	[AMPHIBIOUS]
 	[NO_PHYS_ATT_RUST]
@@ -319,7 +319,7 @@ Dark Ages 0.40.19 | r1 | Legendary Dwarfs. Powerful, epic, vanilla Dwarves. GM-X
 	[PROFESSION_NAME:MASTER_BOWMAN:Elite Bowdwarf:Elite Bowdwarves]
 	[SPEECH:dwarf.txt]
 	[HOMEOTHERM:10067]
-	[ALCOHOL_DEPENDENT]
+	*ALCOHOL_DEPENDENT* Legendary dwarves are immune to dependency.
 	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:711:521:293:1900:2900] 30 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:5951:5419:4898:1463:6944:8233] 6 kph
 	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:5951:5419:4898:1463:6944:8233] 6 kph

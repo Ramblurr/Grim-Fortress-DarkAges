@@ -3,7 +3,7 @@ creature_vampire_strains
 [OBJECT:CREATURE]
 
 =================================================================================================================
-Dark Ages 0.40.13 | r6 | Procedural vampires, refit strains. Knight Otu script. Scariest vampires, ever? GM-X | dfdarkage.com
+Dark Ages 0.40.19 | r2 | Procedural vampires, refit strains. Knight Otu script. Scariest vampires, ever? GM-X | dfdarkage.com
 =================================================================================================================
 
 [CREATURE:VAMPIRE_NOCTURNE_MOTH_FORM]
@@ -294,8 +294,10 @@ Dark Ages 0.40.13 | r6 | Procedural vampires, refit strains. Knight Otu script. 
 				[SYN_INHALED]
 				[SYN_INJECTED]
 				[ENTERS_BLOOD]
-				[CE_BLEEDING:SEV:100:PROB:100:RESISTABLE:LOCALIZED:START:0:PEAK:30:END:630]
-			    [CE_FEVER:SEV:50:PROB:50:RESISTABLE:SIZE_DILUTES:START:50:PEAK:500:END:960]					
+				[CE_BLEEDING:SEV:100:PROB:100:RESISTABLE:LOCALIZED:START:0:PEAK:30:END:240]
+			    [CE_FEVER:SEV:75:PROB:100:RESISTABLE:SIZE_DILUTES:START:0:PEAK:120:END:990]
+			    [CE_DROWSINESS:SEV:60:PROB:100:RESISTABLE:SIZE_DILUTES:START:0:PEAK:30:END:2000]				
+			    [CE_UNCONSCIOUSNESS:SEV:75:PROB:100:RESISTABLE:SIZE_DILUTES:START:0:PEAK:120:END:480]						
 	[PERSONALITY:BRAVERY:25:80:100]
 	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
 		[ATTACK_SKILL:BITE]
@@ -730,11 +732,11 @@ Dark Ages 0.40.13 | r6 | Procedural vampires, refit strains. Knight Otu script. 
 ===========================================================================================================
 	
 [CREATURE:VAMPIRE_LESSER_STRIGOI_MONSTER_FORM]
-	[DESCRIPTION:A foul lesser strigoi monster vampire form. It has a huge double mouth, foaming and dripping with malice.]
+	[DESCRIPTION:A foul lesser strigoi monster vampire form. It has a huge double mouth foaming and dripping with malice.]
 	[NAME:lesser strigoi monster vampire form:lesser strigoi monster vampire forms:lesser strigoi monster vampire form]
 	[CASTE_NAME:lesser strigoi monster vampire form:lesser strigoi monster vampire forms:lesser strigoi monster vampire form]
 	[CREATURE_TILE:'V'][COLOR:0:0:1]
-	[MEANDERER][AMBUSHPREDATOR]
+	[AMBUSHPREDATOR]
     [SUPERNATURAL][FANCIFUL][TRANCES][NOEXERT][PRONE_TO_RAGE:75][CRAZED][BLOODSUCKER][NOFEAR]
     [SPHERE:MISERY][SPHERE:NIGHT][SPHERE:DEATH][SPHERE:TRICKERY][SPHERE:THEFT]
 ============================================================================================================
@@ -748,10 +750,10 @@ Dark Ages 0.40.13 | r6 | Procedural vampires, refit strains. Knight Otu script. 
 	[LOW_LIGHT_VISION:10000]
 ============================================================================================================
 	[GENERAL_MATERIAL_FORCE_MULTIPLIER:1:4]
-	[MATERIAL_FORCE_MULTIPLIER:INORGANIC:SILVER:10:1]	
-	[NATURAL_SKILL:BITE:7]
-	[NATURAL_SKILL:DODGING:7]
-	[NATURAL_SKILL:SNEAK:7]		
+	[MATERIAL_FORCE_MULTIPLIER:INORGANIC:SILVER:25:1]	
+	[NATURAL_SKILL:BITE:5]
+	[NATURAL_SKILL:DODGING:4]
+	[NATURAL_SKILL:SNEAK:3]		
 ============================================================================================================
 	[SELECT_TISSUE_LAYER:ALL]
 		[TL_HEALING_RATE:50]
@@ -836,12 +838,14 @@ Dark Ages 0.40.13 | r6 | Procedural vampires, refit strains. Knight Otu script. 
 		[SYNDROME]
 			[SYN_NAME:Lesser Strigoi Monster Vampire Spittle]
 			[SYN_AFFECTED_CLASS:GENERAL_POISON]
+			[SYN_IMMUNE_CREATURE:VAMPIRE_LESSER_STRIGOI:ALL]			
 			[SYN_IMMUNE_CREATURE:VAMPIRE_LESSER_STRIGOI_MONSTER_FORM:ALL]
-			[SYN_IMMUNE_CREATURE:VAMPIRE_LESSER_STRIGOI_MONSTER_FORM:ALL]			
+			[SYN_IMMUNE_CREATURE:STRIGOI_SERPENT_WORM:ALL]			
 			[SYN_INJECTED]
 			[SYN_CONTACT]			
-			[CE_DROWSINESS:SEV:100:PROB:50:RESISTABLE:SIZE_DILUTES:START:60:PEAK:120:END:240]
-			[CE_FEVER:SEV:100:PROB:100:RESISTABLE:SIZE_DILUTES:START:50:PEAK:500:END:480]				
+			    [CE_FEVER:SEV:70:PROB:75:RESISTABLE:SIZE_DILUTES:START:0:PEAK:120:END:990]
+			    [CE_DROWSINESS:SEV:50:PROB:75:RESISTABLE:SIZE_DILUTES:START:0:PEAK:30:END:2000]				
+			    [CE_UNCONSCIOUSNESS:SEV:70:PROB:75:RESISTABLE:SIZE_DILUTES:START:0:PEAK:120:END:480]			
 ==========================================================================================================	
 	[BODY_SIZE:0:0:99000]
 	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]

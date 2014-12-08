@@ -3,11 +3,12 @@ reaction_dark_ages
 [OBJECT:REACTION]
 
 ===========================================================================================================
-Dark Ages 0.40.13 | r4 | by GM-X | dfdarkage.com
+Dark Ages 0.40.19 | r2 | by GM-X | dfdarkage.com
 ===========================================================================================================
 *Expanded Woodcrafting
 *Adds 4-Alchemy products, refit Wanderer balms by Deon
 *Adds Refit/simplified Black Powder Firearms by Jake
+*Added Pick to the Woodshop in Fortress mode. Still requires metal bars.
 ===========================================================================================================
 
 [REACTION:MAKE_MACE_WOODEN]
@@ -65,6 +66,14 @@ Dark Ages 0.40.13 | r4 | by GM-X | dfdarkage.com
 	[BUILDING:WOODSHOP:CUSTOM_ALT_D]
 	[PRODUCT:100:25:AMMO:ITEM_AMMO_BLOWDARTS:GET_MATERIAL_FROM_REAGENT:A:NONE][FORCE_EDGE]
 	[SKILL:WOODCRAFT]
+	
+[REACTION:MAKE_PICK_AXE]
+	[NAME:craft pickaxe]
+	[REAGENT:A:1:WOOD:NO_SUBTYPE:NONE:NONE]
+	[REAGENT:B:1:BAR:NONE:METAL:NONE]
+	[BUILDING:WOODSHOP:CUSTOM_ALT_X]	
+	[PRODUCT:100:1:WEAPON:ITEM_WEAPON_PICK:GET_MATERIAL_FROM_REAGENT:B:NONE][FORCE_EDGE]
+	[SKILL:FORGE_WEAPON]	
 
 ===========================================================================================================
 	

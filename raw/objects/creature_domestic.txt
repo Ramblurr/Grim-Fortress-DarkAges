@@ -643,7 +643,7 @@ Dark Ages 0.40.19 | r1 | Adds hound, owl, giant lobster, cave lynx. No other cha
 				[TLCM_NOUN:eyes:PLURAL]
 	[SELECT_MATERIAL:ALL]
 		[MULTIPLY_VALUE:2]
-		
+			
 =========================================================================================================				
 				
 [CREATURE:CAT]
